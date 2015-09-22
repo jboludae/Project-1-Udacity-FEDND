@@ -4,68 +4,79 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700|Lato:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<title>Josep's Portfolio</title>
 </head>
 <body>
-	<header class="portfolio-header header-title">
+	<header class="portfolio-header">
 		<div class="container">
-			<div class="row header-title">
-<!-- 				<div class="col-md-12 header-white"></div> -->
+			<div class="row center-aligned">
 				<div class="col-md-2 col-md-offset-4">
-					<img class="right-block" src="http://placehold.it/100x100" alt="Logo">
+					<img class="my-picture" src='images/Josep_Boluda.jpg' alt="my picture">
 				</div>
-				<div class="col-md-6 text-left">
+				<div class="col-md-6 text-left text-uppercase">
 					<h1>Josep Boluda</h1>
-					<h3>Front End Developer</h3>
+					<h3>Data-Driven Marketer</h3>
 				</div>
 			</div>
 		</div>
+		<ul id="navigation" class="navi">
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">About me</a></li>
+		</ul>
 	</header>
-	<nav class="wide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<ul class="nav nav-pills nav-justified">
-						<li role="navigation" class="active"><a href="#"><h4>Portfolio</h4></a></li>
-						<li role="navigation"><a href="#"><h4>About me</h4></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
 	<section class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://placehold.it/350x200" alt="Image project 1">
-				<h3>Project 1</h3>
-				<h4><a href="link">Link</a></h4>
+				<div class="first project image-cover">
+					<div class="text">
+						<h4><a href="#">Interactive Resume</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://placehold.it/350x200" alt="Image project 1">
-				<h3>Project 1</h3>
-				<h4><a href="link">Link</a></h4>
+				<div class="second project image-cover">
+					<div class="text">
+						<h4><a href="#">Arcade Game</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://placehold.it/350x200" alt="Image project 1">
-				<h3>Project 1</h3>
-				<h4><a href="link">Link</a></h4>
+				<div class="third project image-cover">
+					<div class="text">
+						<h4><a href="#">Website Optimization</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://placehold.it/350x200" alt="Image project 1">
-				<h3>Project 1</h3>
-				<h4><a href="link">Link</a></h4>
+				<div class="fourth project image-cover">
+					<div class="text">
+						<h4><a href="#">Neighborhood Map</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://placehold.it/350x200" alt="Image project 1">
-				<h3>Project 1</h3>
-				<h4><a href="link">Link</a></h4>
+				<div class="fifth project image-cover">
+					<div class="text">
+						<h4><a href="#">Health Tracker</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://placehold.it/350x200" alt="Image project 1">
-				<h3>Project 1</h3>
-				<h4><a href="link">Link</a></h4>
+				<div class="sixth project image-cover">
+					<div class="text">
+						<h4><a href="#">Feed Reader Testing</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -73,14 +84,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h5>2015 Josep Boluda</h5>
-				</div>
-				<div class="col-md-6">
-					<a class="btn btn-block btn-social btn-linkedin" href="https://es.linkedin.com/in/josepboluda">asdf</a>
+					<h5>© 2015 Josep Boluda</h5>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<script>
+		$('.text').on('click', function() {
+			$(this).toggleClass('show-description');
+		});
+	</script>
 
 </body>
 </html>
