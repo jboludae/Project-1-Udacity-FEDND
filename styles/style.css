@@ -6,7 +6,7 @@ body{
 }
 /* Header styles*/
 header{
-	background: url('../images/20130616Sankt Gallen0016.jpg');
+	background: url('../img_production/20130616Sankt Gallen0016-1024.jpg');
 	background-size: cover;
 	background-position: center top;
 }
@@ -15,12 +15,11 @@ header{
 	display: flex;
 	-webkit-align-items: center;
 	align-items: center;
-	margin-top: 25px;
+	margin-top: 75px;
 }
 .navi{
 	margin-top: 80px;
 	margin-bottom: 30px;
-	padding:10px;
 	background: rgba(0,0,0,0.6);
 	text-align: center;
 	font-size: 20px;
@@ -29,20 +28,38 @@ header{
 header h1{
 	font-size: 60px;
 }
-#navigation a{
-	color: white;
-}
-li{
-	display: inline;
-	padding: 12px 60px 12px 60px;
-}
 .my-picture{
 	max-width: 100px;
-	border-radius: 50px;
+	border-radius: 100%;
 	border: 3px solid white;
 }
 .portfolio-header{
 	color: white;
+}
+.social{
+	padding: 15px;
+	min-width: 48px;
+	min-height: 48px;
+	font-size: 20px;
+}
+.nav-pills>li>a{
+	border-radius: 0px;
+}
+.nav-pills>li>a:hover{
+	background: rgba(255,255,255,0.7);
+	color: rgb(50,90,140);
+}
+.navi a{
+	border-radius: 0px !important;
+}
+.navi a:hover{
+	background: rgba(255,255,255,0.7) !important;
+	color: rgb(50,90,140) !important;
+	text-decoration: none;
+}
+.nav-justified>li {
+    display: table-cell !important;
+    width: 1%;
 }
 
 /* Portfolio Tiles */
@@ -55,22 +72,22 @@ li{
 }
 
 .first{
-	background: url('../images/20130621ChaletCarcaixent0472.jpg');
+	background: url('../img_production/20130616Sankt Gallen0005-320.jpg');
 }
 .second{
-	background: url('../images/20130621ChaletCarcaixent0472.jpg');
+	background: url('../img_production/20130621ChaletCarcaixent0472-320.jpg');
 }
 .third{
-	background: url('../images/20130621ChaletCarcaixent0472.jpg');
+	background: url('../img_production/20130628Barbacoa xalet1317-320.jpg');
 }
 .fourth{
-	background: url('../images/20130621ChaletCarcaixent0472.jpg');
+	background: url('../img_production/20130704sin título1966-320.jpg');
 }
 .fifth{
-	background: url('../images/20130621ChaletCarcaixent0472.jpg');
+	background: url('../img_production/20130704sin título1977-320.jpg');
 }
 .sixth{
-	background: url('../images/20130621ChaletCarcaixent0472.jpg');
+	background: url('../img_production/gato-320.jpg');
 }
 .image-cover{
 	background-size: cover;
@@ -79,7 +96,7 @@ li{
 .text{
 	background-color: rgba(0,0,0,0.5);
 	color: white;
-	padding: 10px;
+	padding: 6px;
 	position: absolute;
 	bottom: 0;
 	height:40px;
@@ -106,13 +123,48 @@ li{
 .show-description p {
 	opacity: 1;
 }
+.sign{
+	font-size: 25px !important;
+}
 
 /* Footer */
 
 .portfolio-footer{
 	background-color: rgb(50,90,140);
 	color: white;
+	font-size: 20px;
 }
 .portfolio-footer h5{
 	margin: 16px;
+}
+a{
+	color:white;
+}
+.portfolio-footer a{
+	border-radius: 0px !important;
+}
+.portfolio-footer a:hover{
+	background: rgba(255,255,255,0.7) !important;
+	color: rgb(50,90,140) !important;
+	text-decoration: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px){
+	header h1{
+	font-size: 40px;
+	}
+	.sub-title{
+		font-size: 20px;
+	}
+	.contact{
+		display: none;
+	}
+	.navi{
+		margin-top: 30px;
+	}
+	.left{
+		text-align: left;
+	}
 }
