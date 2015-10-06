@@ -109,6 +109,7 @@ header h1{
 	padding-bottom:5px;
 	text-align: center;
 }
+
 .text a{
 	color:white;
 	text-align: center;
@@ -121,11 +122,18 @@ header h1{
 .show-description{
 	height: 100%;
 }
-.show-description p {
+.show-description p{
+	opacity: 1;
+}
+.show-description h3{
 	opacity: 1;
 }
 .sign{
 	font-size: 25px !important;
+}
+.link{
+	text-align: center;
+	opacity: 0;
 }
 
 /* Footer */
