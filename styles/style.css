@@ -110,13 +110,14 @@ header h1{
 	padding: 6px;
 	position: absolute;
 	bottom: 0;
-	height:40px;
+	height:48px;
 	transition: height .5s;
 	-webkit-transition: height .5s;
 	-moz-transition: height .5s;
 }
 .text h4{
 	margin:0px;
+	padding-top: 3px;
 	padding-bottom:5px;
 	text-align: center;
 }
@@ -124,6 +125,7 @@ header h1{
 .text a{
 	color:white;
 	text-align: center;
+	padding: 5px;
 }
 .text p{
 	font-size: 16px;
